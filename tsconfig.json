@@ -5,7 +5,6 @@
     "forceConsistentCasingInFileNames": true,
     "inlineSources": true,
     "lib": ["dom", "dom.iterable", "es2017", "es2017.object"],
-    "module": "CommonJS",
     "moduleResolution": "node",
     "noImplicitAny": true,
     "noImplicitReturns": true,
