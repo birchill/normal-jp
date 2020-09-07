@@ -4,7 +4,7 @@
   "description": "Various Japanese text conversion utilities",
   "author": "Brian Birtles",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc --outDir dist/esm && tsc -m commonjs --outDir dist/cjs",
     "test": "jest",
     "prepublish": "tsc",
     "release": "standard-version"
@@ -17,9 +17,11 @@
     "url": "https://github.com/birchill/normal-jp/issues"
   },
   "files": [
-    "dist"
+    "dist/**"
   ],
-  "main": "dist/index.js",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "typings": "dist/esm/index.d.ts",
   "homepage": "https://github.com/birchill/normal-jp#readme",
   "devDependencies": {
     "@types/jest": "^24.0.19",
