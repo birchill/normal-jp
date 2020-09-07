@@ -1,2 +1,3 @@
-export { toNormalized } from './to-normalized';
+export { expandChoon } from './expand-choon';
 export { kanaToHiragana } from './kana-to-hiragana';
+export { toNormalized } from './to-normalized';
