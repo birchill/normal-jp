@@ -28,6 +28,13 @@ Note that the length of the output is equal to the length of the input so this
 function does not returning the mapping from input string character offsets to
 output string positions.
 
+## `expandChoon`
+
+Expands ー to the various vowels it may represent.
+
+As with `katakanaToHiragana` the length of the input and output is equal so this
+function does not return the mapping between character offsets.
+
 ## Publishing
 
 ```
