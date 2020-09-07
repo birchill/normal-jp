@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.2](https://github.com/birchill/normal-jp/compare/v1.1.1...v1.1.2) (2020-09-07)
+
+
+### Bug Fixes
+
+* Try adding esModuleInterop to see if it fixes anything ([24fcb23](https://github.com/birchill/normal-jp/commit/24fcb23f76266cf410d829fda83d5f753a5ecf1b))
+
 ### [1.1.1](https://github.com/birchill/normal-jp/compare/v1.1.0...v1.1.1) (2020-09-07)
 
 
