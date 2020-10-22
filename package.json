@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc --outDir dist/esm && tsc -m commonjs --outDir dist/cjs",
     "test": "jest",
-    "prepublish": "tsc",
+    "prepublishOnly": "tsc --outDir dist/esm && tsc -m commonjs --outDir dist/cjs",
     "release": "standard-version"
   },
   "repository": {
