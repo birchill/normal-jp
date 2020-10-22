@@ -5,6 +5,7 @@ describe('countMora', () => {
     expect(countMora('しゃけ')).toEqual(2);
     expect(countMora('とうきょう')).toEqual(4);
     expect(countMora('いっぱい')).toEqual(4);
+    expect(countMora('トウキョウ')).toEqual(4);
     // This is non-sense, but let's try to do something sensible
     expect(countMora('ゃや')).toEqual(2);
   });
