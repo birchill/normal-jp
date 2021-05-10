@@ -6,8 +6,11 @@
   "scripts": {
     "build": "tsc --outDir dist/esm && tsc -m commonjs --outDir dist/cjs",
     "test": "jest",
-    "prepublishOnly": "tsc --outDir dist/esm && tsc -m commonjs --outDir dist/cjs",
-    "release": "standard-version"
+    "prepublishOnly": "pinst --disable && tsc --outDir dist/esm && tsc -m commonjs --outDir dist/cjs",
+    "postinstall": "husky install",
+    "postpublish": "pinst --enable",
+    "release": "standard-version",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -24,21 +27,17 @@
   "typings": "dist/esm/index.d.ts",
   "homepage": "https://github.com/birchill/normal-jp#readme",
   "devDependencies": {
-    "@types/jest": "^24.0.19",
-    "husky": "^3.0.8",
-    "jest": "^24.9.0",
-    "lint-staged": "^9.4.2",
-    "mocha": "^6.2.1",
-    "prettier": "^1.18.2",
-    "standard-version": "^7.0.0",
-    "ts-jest": "^24.1.0",
-    "ts-loader": "^6.2.0",
-    "typescript": "^3.6.4"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
+    "@types/jest": "^26.0.23",
+    "husky": "^6.0.0",
+    "jest": "^26.6.3",
+    "lint-staged": "^11.0.0",
+    "mocha": "^8.4.0",
+    "pinst": "^2.1.6",
+    "prettier": "^2.3.0",
+    "standard-version": "^9.3.0",
+    "ts-jest": "^26.5.6",
+    "ts-loader": "^9.1.2",
+    "typescript": "^4.2.4"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,css}": [
@@ -62,7 +61,7 @@
     "testRegex": "src/.*.test.ts$",
     "globals": {
       "ts-jest": {
-        "tsConfig": {
+        "tsconfig": {
           "esModuleInterop": true
         }
       }
