@@ -29,6 +29,18 @@ Note that the length of the output is equal to the length of the input so this
 function does not returning the mapping from input string character offsets to
 output string positions.
 
+## `kyuujitaiToShinjitai`
+
+Converts various 旧字体 (_kyuujitai_, old character forms) to 新字体 (_shinjitai_,
+new character forms).
+
+Based on the data in https://en.wikipedia.org/wiki/Kyūjitai but does not handle
+_kyuujitai_ represented using variation selectors since these are stripped by
+`toNormalized`.
+
+As with `katakanaToHiragana` the length of the input and output is equal so this
+function does not return the mapping between character offsets.
+
 ## `expandChoon`
 
 Expands ー to the various vowels it may represent.
