@@ -106,8 +106,9 @@ const ENCLOSED_CHARS_D = [
 //   (e.g. ㋕ → カ)
 // - various combined characters into their expanded form
 //   (e.g. ㌀ → アパート, ㋿ → 令和)
+// - characters with variation selectors into the base character only
 //
-// while maintaining a mapping from input character offsets to output
+// while maintaining a mapping from output character offsets to input
 // offsets.
 export function toNormalized(input: string): [string, number[]] {
   let inputLengths = [0];
@@ -115,7 +116,12 @@ export function toNormalized(input: string): [string, number[]] {
 
   for (let i = 0; i < input.length; ++i) {
     let c = input.charCodeAt(i);
-    const prevChar = result.length ? result.charCodeAt(result.length - 1) : 0;
+
+    // Drop Unicode variation selectors
+    if ((c >= 0xfe00 && c <= 0xfe0f) || (c >= 0xe0100 && c <= 0xe011f)) {
+      inputLengths[result.length] = i + 1;
+      continue;
+    }
 
     // Half-width to full-width katakana
     if (c >= 0xff61 && c <= 0xff9f) {
@@ -124,6 +130,7 @@ export function toNormalized(input: string): [string, number[]] {
 
     // Decomposed characters (including any half-width katakana which we just
     // converted since half-width katakana is always decomposed).
+    const prevChar = result.length ? result.charCodeAt(result.length - 1) : 0;
     if (c === 0x3099) {
       const composed = VOICED_TO_COMPOSED.get(prevChar);
       if (composed) {

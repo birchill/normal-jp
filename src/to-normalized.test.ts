@@ -73,4 +73,11 @@ describe('toNormalized', () => {
       [0, 0, 1, 2, 3, 4, 5, 6],
     ]);
   });
+
+  it('drops variation selectors', () => {
+    expect(toNormalized('あ\u9038\ufe01\u798d\ufe00あ')).toEqual([
+      'あ\u9038\u798dあ',
+      [0, 1, 3, 5, 6],
+    ]);
+  });
 });

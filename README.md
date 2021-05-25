@@ -13,6 +13,7 @@ Performs the following conversions:
   (e.g. ㋕ → カ)
 - various combined characters into their expanded form
   (e.g. ㌀ → アパート, ㋿ → 令和)
+- variation selector characters are dropped
 
 _and_ return the mapping from positions in the output string to the input string
 (using regular character indexing, not fancy codepoint indexing since the APIs
