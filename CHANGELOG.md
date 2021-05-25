@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/birchill/normal-jp/compare/v1.2.2...v1.3.0) (2021-05-25)
+
+
+### Features
+
+* **kyuujitaiToShinjitai:** Add new function for converting from old character forms to new character forms ([52939c5](https://github.com/birchill/normal-jp/commit/52939c51b924b1901f65bcbaa4969b64e9da9be5))
+* **toNormalized:** strip variation selectors ([ec0b15f](https://github.com/birchill/normal-jp/commit/ec0b15f7669e01efe1d871e737a796d599daee28))
+
 ### [1.2.2](https://github.com/birchill/normal-jp/compare/v1.2.1...v1.2.2) (2021-05-10)
 
 ### [1.2.1](https://github.com/birchill/normal-jp/compare/v1.2.0...v1.2.1) (2020-10-22)
