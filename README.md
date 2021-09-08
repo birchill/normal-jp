@@ -62,6 +62,12 @@ Like [`String.prototype.substring`](https://developer.mozilla.org/docs/Web/JavaS
 - `moraSubstring('しゃけ', 0, 1)` ⇒ 'しゃ'
 - `moraSubstring('しゃけ', 1)` ⇒ 'け'
 
+## `halfToFullWidthNum`
+
+Converts half-width numbers to full-width.
+
+- `halfToFullWidthNum('第405号')` ⇒ '第４０５号'
+
 ## Publishing
 
 ```
