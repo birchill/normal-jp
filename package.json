@@ -9,12 +9,14 @@
     "prepublishOnly": "pinst --disable && tsup",
     "postinstall": "husky install",
     "postpublish": "pinst --enable",
-    "release": "standard-version",
     "prepare": "husky install"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/birchill/normal-jp.git"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
   },
   "bugs": {
     "url": "https://github.com/birchill/normal-jp/issues"
@@ -33,13 +35,14 @@
   },
   "homepage": "https://github.com/birchill/normal-jp#readme",
   "devDependencies": {
+    "@release-it/conventional-changelog": "7.0.0",
     "@types/node": "18",
     "husky": "8.0.3",
     "knip": "2.20.2",
     "lint-staged": "14.0.1",
     "pinst": "3.0.0",
     "prettier": "3.0.2",
-    "standard-version": "9.5.0",
+    "release-it": "16.1.5",
     "tsup": "7.2.0",
     "typescript": "5.2.2",
     "vitest": "0.34.3",

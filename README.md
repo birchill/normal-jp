@@ -71,7 +71,5 @@ Converts half-width numbers to full-width.
 ## Publishing
 
 ```
-yarn release
-git push --follow-tags origin main
-yarn publish
+yarn release-it
 ```
