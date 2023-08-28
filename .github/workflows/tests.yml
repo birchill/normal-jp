@@ -6,13 +6,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v1
-    - uses: actions/setup-node@v1
-      with:
-        node-version: '14.x'
-    - name: yarn install, test
-      run: |
-        yarn install
-        yarn test
-      env:
-        CI: true
+      - uses: actions/checkout@v3.6.0
+      - uses: actions/setup-node@v3.8.1
+        with:
+          node-version: 18
+          cache: yarn
+
+      - name: yarn install, test
+        run: |
+          yarn install
+          yarn test
+        env:
+          CI: true
