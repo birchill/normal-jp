@@ -12,9 +12,13 @@ jobs:
           node-version: 18
           cache: yarn
 
-      - name: yarn install, test
+      - name: Build
         run: |
           yarn install
-          yarn test
-        env:
-          CI: true
+          yarn build
+
+      - name: Unit tests
+        run: yarn test
+
+      - name: Knip
+        run: yarn knip

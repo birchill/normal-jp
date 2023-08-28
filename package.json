@@ -4,7 +4,7 @@
   "description": "Various Japanese text conversion utilities",
   "author": "Brian Birtles",
   "scripts": {
-    "build": "tsc --noEmit && tsup",
+    "build": "tsup",
     "test": "vitest run",
     "prepublishOnly": "pinst --disable && tsup",
     "postinstall": "husky install",
@@ -35,12 +35,11 @@
   "devDependencies": {
     "@types/node": "18",
     "husky": "8.0.3",
+    "knip": "2.20.2",
     "lint-staged": "14.0.1",
-    "mocha": "10.2.0",
     "pinst": "3.0.0",
     "prettier": "3.0.2",
     "standard-version": "9.5.0",
-    "ts-loader": "9.4.4",
     "tsup": "7.2.0",
     "typescript": "5.2.2",
     "vitest": "0.34.3",
