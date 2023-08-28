@@ -1,5 +1,11 @@
 name: Release
-on: workflow_dispatch
+on:
+  workflow_dispatch
+    inputs:
+      version:
+        description: 'Version (optional)'
+        required: false
+        type: string
 env:
   CI: true
 
@@ -26,8 +32,16 @@ jobs:
           git config --global user.name "Release It"
           git config --global user.email "actions@users.noreply.github.com"
 
-      - name: Publish
+      - name: Publish default version
+        if: ${{ inputs.version == '' }}
         run: yarn release-it --ci
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Publish
+        if: ${{ inputs.version }}
+        run: yarn release-it --ci -i ${{ inputs.version }}
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
