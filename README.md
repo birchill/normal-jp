@@ -14,6 +14,9 @@ Performs the following conversions:
 - various combined characters into their expanded form
   (e.g. ㌀ → アパート, ㋿ → 令和)
 - variation selector characters are dropped
+- characters encoded using radical codepoints are converted to equivalent kanji
+  codepoints
+  (e.g. ⽂/0x2F42 → 文/0x6587)
 
 _and_ return the mapping from positions in the output string to the input string
 (using regular character indexing, not fancy codepoint indexing since the APIs
