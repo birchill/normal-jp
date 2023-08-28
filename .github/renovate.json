@@ -1,0 +1,17 @@
+{
+  "extends": ["config:base", ":dependencyDashboard"],
+  "labels": ["dependencies"],
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["minor", "patch"],
+      "automerge": true,
+      "automergeType": "branch",
+      "minimumReleaseAge": "5",
+      "internalChecksFilter": "strict"
+    },
+    {
+      "matchDepTypes": ["devDependencies"],
+      "addLabels": ["dev"]
+    }
+  ]
+}
