@@ -5,7 +5,7 @@
   "author": "Brian Birtles",
   "scripts": {
     "build": "tsc --outDir dist/esm && tsc -m commonjs --outDir dist/cjs",
-    "test": "jest",
+    "test": "vitest run",
     "prepublishOnly": "pinst --disable && tsc --outDir dist/esm && tsc -m commonjs --outDir dist/cjs",
     "postinstall": "husky install",
     "postpublish": "pinst --enable",
@@ -27,17 +27,16 @@
   "typings": "dist/esm/index.d.ts",
   "homepage": "https://github.com/birchill/normal-jp#readme",
   "devDependencies": {
-    "@types/jest": "^27.0.1",
     "husky": "^7.0.2",
-    "jest": "^27.1.1",
     "lint-staged": "^11.1.2",
     "mocha": "^9.1.1",
     "pinst": "^2.1.6",
     "prettier": "^2.3.2",
     "standard-version": "^9.3.1",
-    "ts-jest": "^27.0.5",
     "ts-loader": "^9.2.5",
-    "typescript": "^4.4.2"
+    "typescript": "^4.4.2",
+    "vitest": "0.34.3",
+    "vitest-github-actions-reporter": "0.10.0"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,css}": [
@@ -48,22 +47,5 @@
     "singleQuote": true,
     "trailingComma": "es5",
     "bracketSpacing": true
-  },
-  "jest": {
-    "moduleFileExtensions": [
-      "js",
-      "ts"
-    ],
-    "transform": {
-      "^.+\\.ts?$": "ts-jest"
-    },
-    "testRegex": "src/.*.test.ts$",
-    "globals": {
-      "ts-jest": {
-        "tsconfig": {
-          "esModuleInterop": true
-        }
-      }
-    }
   }
 }
