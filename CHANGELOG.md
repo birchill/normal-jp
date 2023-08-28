@@ -1,5 +1,7 @@
 # Changelog
 
+## 1.5.0 (2023-08-28)
+
 ## [1.4.0](https://github.com/birchill/normal-jp/compare/v1.3.1...v1.4.0) (2021-09-08)
 
 
