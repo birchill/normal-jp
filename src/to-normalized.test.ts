@@ -1,3 +1,5 @@
+import { describe, expect, it } from 'vitest';
+
 import { toNormalized } from './to-normalized';
 
 describe('toNormalized', () => {
