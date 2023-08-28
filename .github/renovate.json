@@ -1,5 +1,9 @@
 {
-  "extends": ["config:base", ":dependencyDashboard"],
+  "extends": [
+    "config:base",
+    "helpers:disableTypesNodeMajor",
+    ":dependencyDashboard"
+  ],
   "labels": ["dependencies"],
   "packageRules": [
     {

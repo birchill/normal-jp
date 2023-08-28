@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 
-import { kanaToHiragana } from './kana-to-hiragana';
+import { kanaToHiragana } from './kana-to-hiragana.js';
 
 describe('kanaToHiragana', () => {
   it('converts katakana', () => {

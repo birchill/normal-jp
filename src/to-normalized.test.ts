@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 
-import { toNormalized } from './to-normalized';
+import { toNormalized } from './to-normalized.js';
 
 describe('toNormalized', () => {
   it('converts half-width katakana to full-width', () => {

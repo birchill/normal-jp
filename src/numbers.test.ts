@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 
-import { halfToFullWidthNum } from './numbers';
+import { halfToFullWidthNum } from './numbers.js';
 
 describe('halfToFullWidthNum', () => {
   it('converts numbers', () => {

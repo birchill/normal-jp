@@ -4,9 +4,9 @@
   "description": "Various Japanese text conversion utilities",
   "author": "Brian Birtles",
   "scripts": {
-    "build": "tsc --outDir dist/esm && tsc -m commonjs --outDir dist/cjs",
+    "build": "tsc --noEmit && tsup",
     "test": "vitest run",
-    "prepublishOnly": "pinst --disable && tsc --outDir dist/esm && tsc -m commonjs --outDir dist/cjs",
+    "prepublishOnly": "pinst --disable && tsup",
     "postinstall": "husky install",
     "postpublish": "pinst --enable",
     "release": "standard-version",
@@ -22,11 +22,18 @@
   "files": [
     "dist/**"
   ],
-  "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
-  "typings": "dist/esm/index.d.ts",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
   "homepage": "https://github.com/birchill/normal-jp#readme",
   "devDependencies": {
+    "@types/node": "18",
     "husky": "8.0.3",
     "lint-staged": "14.0.1",
     "mocha": "10.2.0",
@@ -34,6 +41,7 @@
     "prettier": "3.0.2",
     "standard-version": "9.5.0",
     "ts-loader": "9.4.4",
+    "tsup": "7.2.0",
     "typescript": "5.2.2",
     "vitest": "0.34.3",
     "vitest-github-actions-reporter": "0.10.0"

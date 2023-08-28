@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 
-import { expandChoon } from './expand-choon';
+import { expandChoon } from './expand-choon.js';
 
 describe('expandChoon', () => {
   it('returns empty when nothing matches', () => {

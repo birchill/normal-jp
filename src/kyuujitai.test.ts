@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 
-import { kyuujitaiToShinjitai } from './kyuujitai';
+import { kyuujitaiToShinjitai } from './kyuujitai.js';
 
 describe('kyuujitaiToShinjitai', () => {
   it('converts kyuujitai to shinjitai', () => {

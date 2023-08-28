@@ -125,7 +125,7 @@ export function toNormalized(input: string): [string, number[]] {
 
     // Half-width to full-width katakana
     if (c >= 0xff61 && c <= 0xff9f) {
-      c = HANKAKU_KATAKANA_TO_ZENKAKU[c - 0xff61];
+      c = HANKAKU_KATAKANA_TO_ZENKAKU[c - 0xff61]!;
     }
 
     // Decomposed characters (including any half-width katakana which we just
@@ -147,7 +147,7 @@ export function toNormalized(input: string): [string, number[]] {
     }
 
     // Look for an expanded character
-    let expanded: null | string = null;
+    let expanded: string | undefined;
     if (c >= 0x3300 && c <= 0x3370) {
       expanded = COMBINED_CHARS_A[c - 0x3300];
     } else if (c >= 0x337b && c <= 0x337f) {

@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 
-import { countMora, moraSubstring } from './mora';
+import { countMora, moraSubstring } from './mora.js';
 
 describe('countMora', () => {
   it('handles simple cases', () => {
