@@ -2602,10 +2602,10 @@ keyv@^4.5.3:
   dependencies:
     json-buffer "3.0.1"
 
-knip@2.21.2:
-  version "2.21.2"
-  resolved "https://registry.yarnpkg.com/knip/-/knip-2.21.2.tgz#81eb2ab8996f46ce3387984e1054aba2ca7bdda8"
-  integrity sha512-/fGWb1OZHtGj5/9nONL2iiSKdK6gbc7Kf9o5zoQJQyKe0nTYt21WnzGoXM4c6LE78V7hadJZF+2eVH56/VwdHw==
+knip@2.22.0:
+  version "2.22.0"
+  resolved "https://registry.yarnpkg.com/knip/-/knip-2.22.0.tgz#fb5545777f24b38f9433d959da3e5dcef78ea715"
+  integrity sha512-4YboXHvLYE3WzJM5A+M4oXoTogEe+etljGYdEq+nxCEHl6B/C5EdwieOqwGCd63VAmxXF72YvN8qKdoL2iBtmQ==
   dependencies:
     "@ericcornelissen/bash-parser" "^0.5.2"
     "@npmcli/map-workspaces" "^3.0.4"
