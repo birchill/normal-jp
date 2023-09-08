@@ -45,7 +45,7 @@
     "release-it": "16.1.5",
     "tsup": "7.2.0",
     "typescript": "5.2.2",
-    "vitest": "0.34.3",
+    "vitest": "0.34.4",
     "vitest-github-actions-reporter": "0.10.0"
   },
   "lint-staged": {
