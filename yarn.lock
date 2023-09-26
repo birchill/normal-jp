@@ -2671,10 +2671,10 @@ keyv@^4.5.3:
   dependencies:
     json-buffer "3.0.1"
 
-knip@2.28.0:
-  version "2.28.0"
-  resolved "https://registry.yarnpkg.com/knip/-/knip-2.28.0.tgz#169102d7e382ed887c987d29aac69862dcd892e0"
-  integrity sha512-MyH0ShBX0G0cb/WT8YfWNc1t53XbCG/borVRpM/eK+bsi/E38C/9T+tFy3wOmMo3mmfCb224E/aINW+3EQe5lw==
+knip@2.29.0:
+  version "2.29.0"
+  resolved "https://registry.yarnpkg.com/knip/-/knip-2.29.0.tgz#e7fbd0adbdf7ccda7a85fb2d86e05ba24e5becd5"
+  integrity sha512-gA2M5JvH+HroslEiKdDzic7TYaMmysX766VdaqK4JoWc/FVkFESxs/qHcbIYD19uBkcVl26X22GR81lWvICb7w==
   dependencies:
     "@ericcornelissen/bash-parser" "^0.5.2"
     "@npmcli/map-workspaces" "^3.0.4"

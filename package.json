@@ -38,7 +38,7 @@
     "@release-it/conventional-changelog": "7.0.2",
     "@types/node": "18",
     "husky": "8.0.3",
-    "knip": "2.28.0",
+    "knip": "2.29.0",
     "lint-staged": "14.0.1",
     "pinst": "3.0.0",
     "prettier": "3.0.3",
