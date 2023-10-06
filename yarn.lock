@@ -2678,10 +2678,10 @@ keyv@^4.5.3:
   dependencies:
     json-buffer "3.0.1"
 
-knip@2.30.1:
-  version "2.30.1"
-  resolved "https://registry.yarnpkg.com/knip/-/knip-2.30.1.tgz#ae1a5f853c8ef5703fc30fd0195c456038825aeb"
-  integrity sha512-wiJkdflTL61lu37LLCNhZORkyvVM5ScW/50CjnbeeXvNEZI+Z9dYRKwK0w4sVtfo/vQ9rBruKJa1sR+Wo3rC6g==
+knip@2.31.0:
+  version "2.31.0"
+  resolved "https://registry.yarnpkg.com/knip/-/knip-2.31.0.tgz#cd2abd9256d53ddc05d4dfba53b8c75a5e18f6a5"
+  integrity sha512-Axy7cLkKbD4IWMzhw1I6HaZMGRFbVY9zhr5AdM4TZuS93RdqxbdPJQcLInw8RSF+uymfwYHdjFpPsOMa4di1HA==
   dependencies:
     "@ericcornelissen/bash-parser" "^0.5.2"
     "@npmcli/map-workspaces" "^3.0.4"
