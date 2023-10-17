@@ -10,7 +10,7 @@
       "matchUpdateTypes": ["minor", "patch"],
       "automerge": true,
       "automergeType": "branch",
-      "minimumReleaseAge": "5",
+      "minimumReleaseAge": "5 days",
       "internalChecksFilter": "strict"
     },
     {
