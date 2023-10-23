@@ -2906,10 +2906,10 @@ keyv@^4.5.3:
   dependencies:
     json-buffer "3.0.1"
 
-knip@2.34.0:
-  version "2.34.0"
-  resolved "https://registry.yarnpkg.com/knip/-/knip-2.34.0.tgz#61ac1b2d684d6db5ff0f6faffccb441b36f9bde8"
-  integrity sha512-IZJt9EcDaksHOpIOwXeXiKeE3V5RAwSo4OhPomJ6N3r+no2ILGLfbrEw/DUR8z4KUg0TMZteZvuVtceclQ9Gxg==
+knip@2.34.1:
+  version "2.34.1"
+  resolved "https://registry.yarnpkg.com/knip/-/knip-2.34.1.tgz#540533f8b3ecfe51053693cde760649e50af0236"
+  integrity sha512-bSlu+CQ+0MsIDeTJy6ES4/TNu4uI7PRVLVpsgxyWrssSmdE0+UbX1breImMiUYlucnPvVuRMhutJ8zoZSKEXdw==
   dependencies:
     "@ericcornelissen/bash-parser" "^0.5.2"
     "@npmcli/map-workspaces" "^3.0.4"
