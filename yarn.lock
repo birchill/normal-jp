@@ -485,10 +485,10 @@
     semver "^7.3.5"
     validate-npm-package-name "^4.0.0"
 
-"@pnpm/npm-resolver@16.0.11":
-  version "16.0.11"
-  resolved "https://registry.yarnpkg.com/@pnpm/npm-resolver/-/npm-resolver-16.0.11.tgz#67e201ec60998a935cc5e3b388416fec368bc2e6"
-  integrity sha512-yNsMNkIcUux4vScGMEeXUtuqFo4qb5g8IHYfRBTiqjmauwKVyU4mDtAx4auaJs4QrdQDSP/ksXAjFRXyYy7TwA==
+"@pnpm/npm-resolver@16.0.12":
+  version "16.0.12"
+  resolved "https://registry.yarnpkg.com/@pnpm/npm-resolver/-/npm-resolver-16.0.12.tgz#fef93d47c1710228faa5835205c88eaab8fe85fe"
+  integrity sha512-h7ZEOPWSS/Z2gvXcjmMv/lPjUXfVdGjS5bWGSoP9GkwYbgdLbIdRnfnGcdwQUpx1qQZTjqKTjPn2G2fvSPIpKw==
   dependencies:
     "@pnpm/core-loggers" "9.0.3"
     "@pnpm/error" "5.0.2"
@@ -500,7 +500,7 @@
     "@zkochan/retry" "^0.2.0"
     encode-registry "^3.0.1"
     load-json-file "^6.2.0"
-    lru-cache "^9.1.2"
+    lru-cache "^10.0.1"
     normalize-path "^3.0.0"
     p-limit "^3.1.0"
     p-memoize "4.0.1"
@@ -509,7 +509,7 @@
     ramda "npm:@pnpm/ramda@0.28.1"
     rename-overwrite "^4.0.3"
     semver "^7.5.4"
-    ssri "10.0.4"
+    ssri "10.0.5"
     version-selector-type "^3.0.0"
 
 "@pnpm/resolve-workspace-range@5.0.1":
@@ -531,13 +531,13 @@
   resolved "https://registry.yarnpkg.com/@pnpm/types/-/types-9.3.0.tgz#885a2f4c5ffe2018660eaba406246fc98feb2665"
   integrity sha512-BUm6KWNyiQ575D+zi4OkGWImHv0gM6LQYUY/qK/7j9uxmZ66topXQlZSoFX8rR/FcpIRUTrT325iqFqMHoJnww==
 
-"@pnpm/workspace.pkgs-graph@2.0.7":
-  version "2.0.7"
-  resolved "https://registry.yarnpkg.com/@pnpm/workspace.pkgs-graph/-/workspace.pkgs-graph-2.0.7.tgz#a366755881eaae1791b28c307b16bb29ee659746"
-  integrity sha512-y13ZBG8Knq7pydegsOv90dtYOLzcrhx5z9Cf93aOzjtyffFzXkzG5dTNaXNFi7egIsqfIkOEi48d5DegcOrGuQ==
+"@pnpm/workspace.pkgs-graph@2.0.8":
+  version "2.0.8"
+  resolved "https://registry.yarnpkg.com/@pnpm/workspace.pkgs-graph/-/workspace.pkgs-graph-2.0.8.tgz#7ee2dd04ca1b8700fdae6607030c95e1e92336e9"
+  integrity sha512-J3naC64GvtatDxy3xP6B0UVTMHAsP+0zW9LzGCgUZwzewkL9tyYpePWKSt3YXT5jjqXPKcv33Zrx3C72wCzAjA==
   dependencies:
     "@pnpm/npm-package-arg" "^1.0.0"
-    "@pnpm/npm-resolver" "16.0.11"
+    "@pnpm/npm-resolver" "16.0.12"
     "@pnpm/resolve-workspace-range" "5.0.1"
     ramda "npm:@pnpm/ramda@0.28.1"
 
@@ -2906,16 +2906,16 @@ keyv@^4.5.3:
   dependencies:
     json-buffer "3.0.1"
 
-knip@2.35.0:
-  version "2.35.0"
-  resolved "https://registry.yarnpkg.com/knip/-/knip-2.35.0.tgz#f9bf75c5a60b2678f27552b8ef41d34fa4815929"
-  integrity sha512-fHrSPC2bJvjDjzp/a6toJO4M6ukVgRnPApsxuuj7w/BsZw3gENkbLNKQcnT9oe6u6206/AFkKqxYYrz24fnNag==
+knip@2.37.0:
+  version "2.37.0"
+  resolved "https://registry.yarnpkg.com/knip/-/knip-2.37.0.tgz#3fb53e7897e180d4d320e0f7d69b0a02667f1535"
+  integrity sha512-Wivu3D+kuqNysiFIGVd/QgwFP/QRysIdJlkiy0Ky72s4Uopcj/drS8vGQQsBPnGzNtUi66DXezfacYMiVV5zRA==
   dependencies:
     "@ericcornelissen/bash-parser" "^0.5.2"
     "@npmcli/map-workspaces" "^3.0.4"
     "@pkgjs/parseargs" "0.11.0"
     "@pnpm/logger" "5.0.0"
-    "@pnpm/workspace.pkgs-graph" "2.0.7"
+    "@pnpm/workspace.pkgs-graph" "2.0.8"
     "@snyk/github-codeowners" "^1.1.0"
     chalk "^5.2.0"
     easy-table "^1.2.0"
@@ -2930,7 +2930,7 @@ knip@2.35.0:
     summary "^2.1.0"
     typescript "^5.0.2"
     zod "3.22.4"
-    zod-validation-error "^1.5.0"
+    zod-validation-error "2.0.0"
 
 latest-version@^7.0.0:
   version "7.0.0"
@@ -3105,11 +3105,6 @@ lru-cache@^7.14.1:
   resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-7.18.3.tgz#f793896e0fd0e954a59dfdd82f0773808df6aa89"
   integrity sha512-jumlc0BIUrS3qJGgIkWZsyfAM7NCWiBcCDhnd+3NNM5KbBmLTgHVfWBcg6W+rLUsIpzpERPsvwUP7CckAQSOoA==
 
-lru-cache@^9.1.2:
-  version "9.1.2"
-  resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-9.1.2.tgz#255fdbc14b75589d6d0e73644ca167a8db506835"
-  integrity sha512-ERJq3FOzJTxBbFjZ7iDs+NiK4VI9Wz+RdrrAB8dio1oV+YvdPzUEE4QNiT2VD51DkIbCYRUUzCRkssXCHqSnKQ==
-
 macos-release@^3.1.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/macos-release/-/macos-release-3.2.0.tgz#dcee82b6a4932971b1538dbf6f3aabc4a903b613"
@@ -3248,15 +3243,15 @@ minimist@^1.2.5:
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.5.tgz#67d66014b66a6a8aaa0c083c5fd58df4e4e97602"
   integrity sha512-FM9nNUYrRBAELZQT3xeZQ7fmMOBg6nWNmJKTcgsJeaLstP/UODVpGsr5OhXhhXg6f+qtJ8uiZ+PUxkDWcgIXLw==
 
-minipass@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/minipass/-/minipass-5.0.0.tgz#3e9788ffb90b694a5d0ec94479a45b5d8738133d"
-  integrity sha512-3FnjYuehv9k6ovOEbyOswadCDPX1piCfhV8ncmYtHOjuPwylVWsghTLo7rabjC3Rx5xD4HDx8Wm1xnMF7S5qFQ==
-
 "minipass@^5.0.0 || ^6.0.2 || ^7.0.0":
   version "7.0.3"
   resolved "https://registry.yarnpkg.com/minipass/-/minipass-7.0.3.tgz#05ea638da44e475037ed94d1c7efcc76a25e1974"
   integrity sha512-LhbbwCfz3vsb12j/WkWQPZfKTsgqIe1Nf/ti1pKjYESGLHIVjWU96G9/ljLH4F9mWNVhlQOm0VySdAWzf05dpg==
+
+minipass@^7.0.3:
+  version "7.0.4"
+  resolved "https://registry.yarnpkg.com/minipass/-/minipass-7.0.4.tgz#dbce03740f50a4786ba994c1fb908844d27b038c"
+  integrity sha512-jYofLM5Dam9279rdkWzqHozUo4ybjdZmCsDHePy5V/PbBcVMiSZR97gmAy45aqi8CK1lG2ECd356FU86avfwUQ==
 
 mlly@^1.2.0, mlly@^1.4.0:
   version "1.4.1"
@@ -4304,12 +4299,12 @@ split2@^4.0.0:
   resolved "https://registry.yarnpkg.com/split2/-/split2-4.2.0.tgz#c9c5920904d148bab0b9f67145f245a86aadbfa4"
   integrity sha512-UcjcJOWknrNkF6PLX83qcHM6KHgVKNkV62Y8a5uYDVv9ydGQVwAHMKqHdJje1VTWpljG0WYpCDhrCdAOYH4TWg==
 
-ssri@10.0.4:
-  version "10.0.4"
-  resolved "https://registry.yarnpkg.com/ssri/-/ssri-10.0.4.tgz#5a20af378be586df139ddb2dfb3bf992cf0daba6"
-  integrity sha512-12+IR2CB2C28MMAw0Ncqwj5QbTcs0nGIhgJzYWzDkb21vWmfNI83KS4f3Ci6GI98WreIfG7o9UXp3C0qbpA8nQ==
+ssri@10.0.5:
+  version "10.0.5"
+  resolved "https://registry.yarnpkg.com/ssri/-/ssri-10.0.5.tgz#e49efcd6e36385196cb515d3a2ad6c3f0265ef8c"
+  integrity sha512-bSf16tAFkGeRlUNDjXu8FzaMQt6g2HZJrun7mtMbIPOddxt3GLMSz5VWUWcqTJUPfLEaDIepGxv+bYQW49596A==
   dependencies:
-    minipass "^5.0.0"
+    minipass "^7.0.3"
 
 stackback@0.0.2:
   version "0.0.2"
@@ -5116,10 +5111,10 @@ yocto-queue@^1.0.0:
   resolved "https://registry.yarnpkg.com/yocto-queue/-/yocto-queue-1.0.0.tgz#7f816433fb2cbc511ec8bf7d263c3b58a1a3c251"
   integrity sha512-9bnSc/HEW2uRy67wc+T8UwauLuPJVn28jb+GtJY16iiKWyvmYJRXVT4UamsAEGQfPohgr2q4Tq0sQbQlxTfi1g==
 
-zod-validation-error@^1.5.0:
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/zod-validation-error/-/zod-validation-error-1.5.0.tgz#2b355007a1c3b7fb04fa476bfad4e7b3fd5491e3"
-  integrity sha512-/7eFkAI4qV0tcxMBB/3+d2c1P6jzzZYdYSlBuAklzMuCrJu5bzJfHS0yVAS87dRHVlhftd6RFJDIvv03JgkSbw==
+zod-validation-error@2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/zod-validation-error/-/zod-validation-error-2.0.0.tgz#0cfe06f95b7625305ddc148860526f5d8ca63530"
+  integrity sha512-YTZXzeJW1JuHANATyLSdKyQUEXmM5fU0Yzop5odR4rZGtfL6I9HCvJDvBCizu1rPUNiKDEgd5riDxGVNAAPKxg==
 
 zod@3.22.4:
   version "3.22.4"
