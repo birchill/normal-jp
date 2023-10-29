@@ -423,12 +423,12 @@
   resolved "https://registry.yarnpkg.com/@pnpm/constants/-/constants-7.1.1.tgz#3db261425fe15425aa213a2b003f4f60c9378b43"
   integrity sha512-31pZqMtjwV+Vaq7MaPrT1EoDFSYwye3dp6BiHIGRJmVThCQwySRKM7hCvqqI94epNkqFAAYoWrNynWoRYosGdw==
 
-"@pnpm/core-loggers@9.0.3":
-  version "9.0.3"
-  resolved "https://registry.yarnpkg.com/@pnpm/core-loggers/-/core-loggers-9.0.3.tgz#f57505b556020c1a7158e6d48eb9811caa9df093"
-  integrity sha512-qjy8tkqfN3FQtLSh4qN3Qvll+T1lav1K6hgdGiy3R0Zv5rMORc60yaeBzLDq/dvb/DvY7tdwDcMX9e5odAhrNw==
+"@pnpm/core-loggers@9.0.4":
+  version "9.0.4"
+  resolved "https://registry.yarnpkg.com/@pnpm/core-loggers/-/core-loggers-9.0.4.tgz#019bd12bb0ca5f824e89eaae4a57470d62177271"
+  integrity sha512-P5IiCwLbYy/vlCDTxEMReB67NVs1Y4ip6iIEM3Y1fbxm0JbPMWTUMKGf2fy7eqGDF3/Vuxk5H7o/A4II6SWzMA==
   dependencies:
-    "@pnpm/types" "9.3.0"
+    "@pnpm/types" "9.4.0"
 
 "@pnpm/error@5.0.2":
   version "5.0.2"
@@ -485,18 +485,18 @@
     semver "^7.3.5"
     validate-npm-package-name "^4.0.0"
 
-"@pnpm/npm-resolver@16.0.12":
-  version "16.0.12"
-  resolved "https://registry.yarnpkg.com/@pnpm/npm-resolver/-/npm-resolver-16.0.12.tgz#fef93d47c1710228faa5835205c88eaab8fe85fe"
-  integrity sha512-h7ZEOPWSS/Z2gvXcjmMv/lPjUXfVdGjS5bWGSoP9GkwYbgdLbIdRnfnGcdwQUpx1qQZTjqKTjPn2G2fvSPIpKw==
+"@pnpm/npm-resolver@16.0.13":
+  version "16.0.13"
+  resolved "https://registry.yarnpkg.com/@pnpm/npm-resolver/-/npm-resolver-16.0.13.tgz#dfcbb1d833092da9a73bb418e1e9e521e89b2a6b"
+  integrity sha512-m/o9TPezPiu9VNZFSljhUFPWsi/U9fWjoMo3Ld0ec0VX8vmq+9qvNCZl4jnrkv/WzUSTIK0e8XF77ep3UAX3qQ==
   dependencies:
-    "@pnpm/core-loggers" "9.0.3"
+    "@pnpm/core-loggers" "9.0.4"
     "@pnpm/error" "5.0.2"
     "@pnpm/fetching-types" "5.0.0"
     "@pnpm/graceful-fs" "3.2.0"
     "@pnpm/resolve-workspace-range" "5.0.1"
-    "@pnpm/resolver-base" "10.0.3"
-    "@pnpm/types" "9.3.0"
+    "@pnpm/resolver-base" "10.0.4"
+    "@pnpm/types" "9.4.0"
     "@zkochan/retry" "^0.2.0"
     encode-registry "^3.0.1"
     load-json-file "^6.2.0"
@@ -519,25 +519,25 @@
   dependencies:
     semver "^7.4.0"
 
-"@pnpm/resolver-base@10.0.3":
-  version "10.0.3"
-  resolved "https://registry.yarnpkg.com/@pnpm/resolver-base/-/resolver-base-10.0.3.tgz#1466a1a3338c5c61d54ad3eb69d36e07e6aac71d"
-  integrity sha512-7cwt7DxIbvp5vlJgOYS3AN9QmOaKWfSSl9tH5lQ8QOU3bUTmYV5gPxJduY87Avwhs3Qll7V2oyyLeqegMFDbXA==
+"@pnpm/resolver-base@10.0.4":
+  version "10.0.4"
+  resolved "https://registry.yarnpkg.com/@pnpm/resolver-base/-/resolver-base-10.0.4.tgz#515265561e62cfa377628282c6c6a22f9545cef7"
+  integrity sha512-p5L7ZLF8YzLXzydc3kSil1dt5k/ai+NmcxuYlUKOFi8bkC1pV/kbLe5fTm1Pa7BMt7sbc68Y7AGnFfBObNEglQ==
   dependencies:
-    "@pnpm/types" "9.3.0"
+    "@pnpm/types" "9.4.0"
 
-"@pnpm/types@9.3.0":
-  version "9.3.0"
-  resolved "https://registry.yarnpkg.com/@pnpm/types/-/types-9.3.0.tgz#885a2f4c5ffe2018660eaba406246fc98feb2665"
-  integrity sha512-BUm6KWNyiQ575D+zi4OkGWImHv0gM6LQYUY/qK/7j9uxmZ66topXQlZSoFX8rR/FcpIRUTrT325iqFqMHoJnww==
+"@pnpm/types@9.4.0":
+  version "9.4.0"
+  resolved "https://registry.yarnpkg.com/@pnpm/types/-/types-9.4.0.tgz#243b62eea4beab0bb65f1ecec1dfb6f739bba9bd"
+  integrity sha512-IRDuIuNobLRQe0UyY2gbrrTzYS46tTNvOEfL6fOf0Qa8NyxUzeXz946v7fQuQE3LSBf8ENBC5SXhRmDl+mBEqA==
 
-"@pnpm/workspace.pkgs-graph@2.0.8":
-  version "2.0.8"
-  resolved "https://registry.yarnpkg.com/@pnpm/workspace.pkgs-graph/-/workspace.pkgs-graph-2.0.8.tgz#7ee2dd04ca1b8700fdae6607030c95e1e92336e9"
-  integrity sha512-J3naC64GvtatDxy3xP6B0UVTMHAsP+0zW9LzGCgUZwzewkL9tyYpePWKSt3YXT5jjqXPKcv33Zrx3C72wCzAjA==
+"@pnpm/workspace.pkgs-graph@2.0.9":
+  version "2.0.9"
+  resolved "https://registry.yarnpkg.com/@pnpm/workspace.pkgs-graph/-/workspace.pkgs-graph-2.0.9.tgz#12af900025223ffb1358cef766d24f8d130cca50"
+  integrity sha512-Kbai9EIjIT7ohsh9T0lVKCSJbUrSHGh0ib1JXdtTxPOGawjRKsR9MAKpnSvusBqktat5MRH5v4fatzDHTMY8Mw==
   dependencies:
     "@pnpm/npm-package-arg" "^1.0.0"
-    "@pnpm/npm-resolver" "16.0.12"
+    "@pnpm/npm-resolver" "16.0.13"
     "@pnpm/resolve-workspace-range" "5.0.1"
     ramda "npm:@pnpm/ramda@0.28.1"
 
@@ -2906,16 +2906,16 @@ keyv@^4.5.3:
   dependencies:
     json-buffer "3.0.1"
 
-knip@2.38.0:
-  version "2.38.0"
-  resolved "https://registry.yarnpkg.com/knip/-/knip-2.38.0.tgz#8d0ae30c4d79241ac2421c7c6e3eb30cff1c636b"
-  integrity sha512-5neIQAbvGvNgYQGcBYdgFinxjLPNbp0NJzymG6DhY/j5aXCom3C7xNRrv7sFZfriEDruptHAY83zWeAiJLRj9Q==
+knip@2.38.1:
+  version "2.38.1"
+  resolved "https://registry.yarnpkg.com/knip/-/knip-2.38.1.tgz#4f7fefd68d2086d974b67981ad3c5a02c87e9d21"
+  integrity sha512-n+c6kfRHpQfXSpJjDPEvDMIauxKiE8pXuWyaBP8MGjCUrFIGjwUpuFmiF+fNeVMZs2GWPEZzXKM8G7eqzP+u7w==
   dependencies:
     "@ericcornelissen/bash-parser" "^0.5.2"
     "@npmcli/map-workspaces" "^3.0.4"
     "@pkgjs/parseargs" "0.11.0"
     "@pnpm/logger" "5.0.0"
-    "@pnpm/workspace.pkgs-graph" "2.0.8"
+    "@pnpm/workspace.pkgs-graph" "2.0.9"
     "@snyk/github-codeowners" "^1.1.0"
     chalk "^5.2.0"
     easy-table "^1.2.0"
