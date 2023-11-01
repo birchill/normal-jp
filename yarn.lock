@@ -2908,10 +2908,10 @@ keyv@^4.5.3:
   dependencies:
     json-buffer "3.0.1"
 
-knip@2.38.1:
-  version "2.38.1"
-  resolved "https://registry.yarnpkg.com/knip/-/knip-2.38.1.tgz#4f7fefd68d2086d974b67981ad3c5a02c87e9d21"
-  integrity sha512-n+c6kfRHpQfXSpJjDPEvDMIauxKiE8pXuWyaBP8MGjCUrFIGjwUpuFmiF+fNeVMZs2GWPEZzXKM8G7eqzP+u7w==
+knip@2.38.4:
+  version "2.38.4"
+  resolved "https://registry.yarnpkg.com/knip/-/knip-2.38.4.tgz#343acb56e7f2ebd64eb4618dd0fcddd8c2f5346f"
+  integrity sha512-6/RbPRslQJ2dew3rlOItHFckx3F9PtOCXblIe9oimMxR6lNZ59Suh+65rZl/XM07PqE5v10PlKFl3gJdhcGENA==
   dependencies:
     "@ericcornelissen/bash-parser" "^0.5.2"
     "@npmcli/map-workspaces" "^3.0.4"
@@ -2932,7 +2932,7 @@ knip@2.38.1:
     summary "^2.1.0"
     typescript "^5.0.2"
     zod "3.22.4"
-    zod-validation-error "2.0.0"
+    zod-validation-error "1.5.0"
 
 latest-version@^7.0.0:
   version "7.0.0"
@@ -5118,10 +5118,10 @@ yocto-queue@^1.0.0:
   resolved "https://registry.yarnpkg.com/yocto-queue/-/yocto-queue-1.0.0.tgz#7f816433fb2cbc511ec8bf7d263c3b58a1a3c251"
   integrity sha512-9bnSc/HEW2uRy67wc+T8UwauLuPJVn28jb+GtJY16iiKWyvmYJRXVT4UamsAEGQfPohgr2q4Tq0sQbQlxTfi1g==
 
-zod-validation-error@2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/zod-validation-error/-/zod-validation-error-2.0.0.tgz#0cfe06f95b7625305ddc148860526f5d8ca63530"
-  integrity sha512-YTZXzeJW1JuHANATyLSdKyQUEXmM5fU0Yzop5odR4rZGtfL6I9HCvJDvBCizu1rPUNiKDEgd5riDxGVNAAPKxg==
+zod-validation-error@1.5.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/zod-validation-error/-/zod-validation-error-1.5.0.tgz#2b355007a1c3b7fb04fa476bfad4e7b3fd5491e3"
+  integrity sha512-/7eFkAI4qV0tcxMBB/3+d2c1P6jzzZYdYSlBuAklzMuCrJu5bzJfHS0yVAS87dRHVlhftd6RFJDIvv03JgkSbw==
 
 zod@3.22.4:
   version "3.22.4"
