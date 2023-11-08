@@ -2908,10 +2908,10 @@ keyv@^4.5.3:
   dependencies:
     json-buffer "3.0.1"
 
-knip@2.38.6:
-  version "2.38.6"
-  resolved "https://registry.yarnpkg.com/knip/-/knip-2.38.6.tgz#9c27c9b2719b58815117bc3a528951b36e5849be"
-  integrity sha512-FUkcSx0VGmRQ70rQzcygZrP3FPpoFS5CFp7sONGclB+HIIA6DJ11u1MZXmh0XsXewgeIm9guCkAD6xoO4i/hWA==
+knip@2.39.0:
+  version "2.39.0"
+  resolved "https://registry.yarnpkg.com/knip/-/knip-2.39.0.tgz#6e1a91adb0e369291f25268f977ff1a83e60b492"
+  integrity sha512-2piCiCtazV+EfshVmblfaVRTsWI+mZ/ipmBJw2V6BorN0nX+t0BcmMX7s3ozrjpS/ZWANUHOcfWyzA5dbjMM/w==
   dependencies:
     "@ericcornelissen/bash-parser" "^0.5.2"
     "@npmcli/map-workspaces" "^3.0.4"
