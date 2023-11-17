@@ -529,10 +529,10 @@
     "@pnpm/resolve-workspace-range" "5.0.1"
     ramda "npm:@pnpm/ramda@0.28.1"
 
-"@release-it/conventional-changelog@8.0.0":
-  version "8.0.0"
-  resolved "https://registry.yarnpkg.com/@release-it/conventional-changelog/-/conventional-changelog-8.0.0.tgz#0dae4eb12f40352a0d68e968002b7f285d4016c8"
-  integrity sha512-0ItVcp3KRIfI6SMaq7i0sWngVwqxsZqZih5F/4mdzZh0gJEgjMixaICVYGPmVX+pLM6eaUuCVQHtC7IEqO6ycg==
+"@release-it/conventional-changelog@8.0.1":
+  version "8.0.1"
+  resolved "https://registry.yarnpkg.com/@release-it/conventional-changelog/-/conventional-changelog-8.0.1.tgz#7aba0162769a001b11fa72ab05ca3f108c2657e3"
+  integrity sha512-pwc9jaBYDaSX5TXw6rEnPfqDkKJN2sFBhYpON1kBi9T3sA9EOBncC4ed0Bv3L1ciNb6eqEJXPfp+tQMqVlv/eg==
   dependencies:
     concat-stream "^2.0.0"
     conventional-changelog "^5.1.0"
