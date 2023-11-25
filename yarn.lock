@@ -3103,10 +3103,10 @@ keyv@^4.5.3:
   dependencies:
     json-buffer "3.0.1"
 
-knip@2.41.3:
-  version "2.41.3"
-  resolved "https://registry.yarnpkg.com/knip/-/knip-2.41.3.tgz#6ee76c543fbf5c22e416dceb4e8e3fc95ae583c6"
-  integrity sha512-ooHaOfiieytMFSYnhhwk+TKFD3kGPNXIxpoLimEFf4nUpmthBOVKyawDjHvl23uJmPkqI6OOQqyQnK6dCUX+xQ==
+knip@2.41.5:
+  version "2.41.5"
+  resolved "https://registry.yarnpkg.com/knip/-/knip-2.41.5.tgz#3e9b088f2be3cc4fa33a6abeb425d3d9ef026a29"
+  integrity sha512-w6C0/tQvvRAWSRo4Vl3CRqmJujx+vizFD4sGWuhdpmx89micpfMZITiGCc54c6S9phGHvZeMNtYGEOyNwbfcjg==
   dependencies:
     "@ericcornelissen/bash-parser" "^0.5.2"
     "@npmcli/map-workspaces" "^3.0.4"
