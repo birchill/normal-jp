@@ -3282,10 +3282,10 @@ keyv@^4.5.3:
   dependencies:
     json-buffer "3.0.1"
 
-knip@5.7.3:
-  version "5.7.3"
-  resolved "https://registry.yarnpkg.com/knip/-/knip-5.7.3.tgz#5c397801b391485a1b7ff3a0ec06e887fb42f1c2"
-  integrity sha512-6SvC/bPdgNkAoG802EY0GzrDyBvHqvqmtmlcI3AqNw7aFm5Ry+Bg+sziSqJCb5Q+55pQ4y5SROQJugxYAZHEew==
+knip@5.8.0:
+  version "5.8.0"
+  resolved "https://registry.yarnpkg.com/knip/-/knip-5.8.0.tgz#2fb5a1f51aa80c2b716ee5f2885084feda9920e8"
+  integrity sha512-q7/3eULypxgjT2EWWt3lly7hbQteKpRj04mfqPMjPb8CPWnF1GzyQtXr++eO0r6pAvSegLlhi/NFmG56sM6pfw==
   dependencies:
     "@ericcornelissen/bash-parser" "0.5.2"
     "@nodelib/fs.walk" "2.0.0"
