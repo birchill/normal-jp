@@ -41,7 +41,7 @@
     "lint-staged": "15.2.2",
     "pinst": "3.0.0",
     "prettier": "3.2.5",
-    "release-it": "17.2.1",
+    "release-it": "17.3.0",
     "tsup": "8.0.2",
     "typescript": "5.4.5",
     "vitest": "1.6.0",
