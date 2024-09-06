@@ -2438,10 +2438,10 @@ keyv@^4.5.3:
   dependencies:
     json-buffer "3.0.1"
 
-knip@5.28.0:
-  version "5.28.0"
-  resolved "https://registry.yarnpkg.com/knip/-/knip-5.28.0.tgz#ef8e5c4a1aa8cd0afc2f6eacdb48a1c1b05ffd1e"
-  integrity sha512-3nlqKCHFCfXp4VDP570ly7HLCyIM3JyLM+msr2l3HtQJ1NeraBrj6AQE80SFIyu8nOJZZpiZQWmiXq5RSczqsQ==
+knip@5.29.1:
+  version "5.29.1"
+  resolved "https://registry.yarnpkg.com/knip/-/knip-5.29.1.tgz#596ba9aea44fb56d89c9cc7d73e2522d50280713"
+  integrity sha512-l8qFtRqNpCk8xf46VOwhBUva7LBwanoGPJ4KQNwVRl6hmEXStf1BJlfbYRZ+yQpbilbIV6LN+ztX6LaGtyd4TQ==
   dependencies:
     "@nodelib/fs.walk" "1.2.8"
     "@snyk/github-codeowners" "1.1.0"
