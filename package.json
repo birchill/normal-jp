@@ -36,7 +36,7 @@
   "devDependencies": {
     "@release-it/conventional-changelog": "8.0.2",
     "@types/node": "20",
-    "husky": "9.1.5",
+    "husky": "9.1.6",
     "knip": "5.30.1",
     "lint-staged": "15.2.10",
     "pinst": "3.0.0",
