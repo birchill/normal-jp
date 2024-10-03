@@ -74,5 +74,5 @@ Converts half-width numbers to full-width.
 ## Publishing
 
 ```
-yarn release-it
+pnpm release-it
 ```

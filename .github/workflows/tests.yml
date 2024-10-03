@@ -7,18 +7,24 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4.2.0
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: latest
+
       - uses: actions/setup-node@v4.0.4
         with:
           node-version: 20
-          cache: yarn
+          cache: pnpm
 
       - name: Build
         run: |
-          yarn install
-          yarn build
+          pnpm install
+          pnpm build
 
       - name: Unit tests
-        run: yarn test
+        run: pnpm test
 
       - name: Knip
-        run: yarn knip
+        run: pnpm knip
