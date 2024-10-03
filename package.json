@@ -1,6 +1,6 @@
 {
   "name": "@birchill/normal-jp",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "description": "Various Japanese text conversion utilities",
   "author": "Brian Birtles",
   "scripts": {
