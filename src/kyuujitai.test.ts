@@ -8,5 +8,6 @@ describe('kyuujitaiToShinjitai', () => {
     expect(kyuujitaiToShinjitai('攪拌')).toEqual('撹拌');
     expect(kyuujitaiToShinjitai('隔靴搔痒')).toEqual('隔靴掻痒');
     expect(kyuujitaiToShinjitai('學校')).toEqual('学校');
+    expect(kyuujitaiToShinjitai('戶')).toEqual('戸');
   });
 });
