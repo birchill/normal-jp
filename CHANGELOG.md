@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.5.2 (2024-10-04)
+
+
+### Bug Fixes
+
+* add 內 kyūjitai ([73ab423](https://github.com/birchill/normal-jp/commit/73ab4237009117c46a35fd0d07cd8f4bd5f29ff3)), closes [/github.com/birchill/10ten-ja-reader/issues/604#issuecomment-2391172525](https://github.com/birchill//github.com/birchill/10ten-ja-reader/issues/604/issues/issuecomment-2391172525)
+
 ## 1.5.1 (2024-10-03)
 
 
