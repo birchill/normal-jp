@@ -9,5 +9,6 @@ describe('kyuujitaiToShinjitai', () => {
     expect(kyuujitaiToShinjitai('隔靴搔痒')).toEqual('隔靴掻痒');
     expect(kyuujitaiToShinjitai('學校')).toEqual('学校');
     expect(kyuujitaiToShinjitai('戶')).toEqual('戸');
+    expect(kyuujitaiToShinjitai('內')).toEqual('内');
   });
 });
