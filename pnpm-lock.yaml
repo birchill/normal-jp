@@ -18,8 +18,8 @@ importers:
         specifier: 9.1.6
         version: 9.1.6
       knip:
-        specifier: 5.30.6
-        version: 5.30.6(@types/node@20.16.10)(typescript@5.6.2)
+        specifier: 5.31.0
+        version: 5.31.0(@types/node@20.16.10)(typescript@5.6.2)
       lint-staged:
         specifier: 15.2.10
         version: 15.2.10
@@ -34,7 +34,7 @@ importers:
         version: 17.6.0(typescript@5.6.2)
       tsup:
         specifier: 8.3.0
-        version: 8.3.0(jiti@1.21.6)(postcss@8.4.47)(typescript@5.6.2)(yaml@2.5.1)
+        version: 8.3.0(jiti@2.3.3)(postcss@8.4.47)(typescript@5.6.2)(yaml@2.5.1)
       typescript:
         specifier: 5.6.2
         version: 5.6.2
@@ -1468,8 +1468,8 @@ packages:
   jackspeak@3.4.3:
     resolution: {integrity: sha512-OGlZQpz2yfahA/Rd1Y8Cd9SIEsqvXkLVoSw/cgwhnhFMDbsQFeZYoJJ7bIZBS9BcamUW96asq/npPWugM+RQBw==}
 
-  jiti@1.21.6:
-    resolution: {integrity: sha512-2yTgeWTWzMWkHu6Jp9NKgePDaYHbntiwvYuuJLbbN9vl7DC9DvXKOB2BC3ZZ92D3cvV/aflH0osDfwpHepQ53w==}
+  jiti@2.3.3:
+    resolution: {integrity: sha512-EX4oNDwcXSivPrw2qKH2LB5PoFxEvgtv2JgwW0bU858HoLQ+kutSvjLMUqBd0PeJYEinLWhoI9Ol0eYMqj/wNQ==}
     hasBin: true
 
   joycon@3.1.1:
@@ -1509,8 +1509,8 @@ packages:
   keyv@4.5.4:
     resolution: {integrity: sha512-oxVHkHR/EJf2CNXnWxRLW6mg7JyCCUcG0DtEGmL2ctUo1PNTin1PUil+r/+4r5MpVgC/fn1kjsx7mjSujKqIpw==}
 
-  knip@5.30.6:
-    resolution: {integrity: sha512-YkcnRVl0N99xZ7eaXE7KlH/4cPTCn6BGuk9KxINEdCMFN3yita2vGBizApy97ZOHgghy8tb589gQ3xvLMFIO4w==}
+  knip@5.31.0:
+    resolution: {integrity: sha512-4hR+qHx/id7mniCWWUqA4MXwGjYFN75xv3qLmEkl9Hm6eCKAhv0wGP0CyrXKUYxVyDplJQsqQaAlsjuRKYsdPA==}
     engines: {node: '>=18.6.0'}
     hasBin: true
     peerDependencies:
@@ -3826,7 +3826,7 @@ snapshots:
     optionalDependencies:
       '@pkgjs/parseargs': 0.11.0
 
-  jiti@1.21.6: {}
+  jiti@2.3.3: {}
 
   joycon@3.1.1: {}
 
@@ -3858,7 +3858,7 @@ snapshots:
     dependencies:
       json-buffer: 3.0.1
 
-  knip@5.30.6(@types/node@20.16.10)(typescript@5.6.2):
+  knip@5.31.0(@types/node@20.16.10)(typescript@5.6.2):
     dependencies:
       '@nodelib/fs.walk': 1.2.8
       '@snyk/github-codeowners': 1.1.0
@@ -3866,7 +3866,7 @@ snapshots:
       easy-table: 1.2.0
       enhanced-resolve: 5.17.1
       fast-glob: 3.3.2
-      jiti: 1.21.6
+      jiti: 2.3.3
       js-yaml: 4.1.0
       minimist: 1.2.8
       picocolors: 1.1.0
@@ -4215,11 +4215,11 @@ snapshots:
 
   pirates@4.0.6: {}
 
-  postcss-load-config@6.0.1(jiti@1.21.6)(postcss@8.4.47)(yaml@2.5.1):
+  postcss-load-config@6.0.1(jiti@2.3.3)(postcss@8.4.47)(yaml@2.5.1):
     dependencies:
       lilconfig: 3.1.2
     optionalDependencies:
-      jiti: 1.21.6
+      jiti: 2.3.3
       postcss: 8.4.47
       yaml: 2.5.1
 
@@ -4609,7 +4609,7 @@ snapshots:
 
   tslib@2.7.0: {}
 
-  tsup@8.3.0(jiti@1.21.6)(postcss@8.4.47)(typescript@5.6.2)(yaml@2.5.1):
+  tsup@8.3.0(jiti@2.3.3)(postcss@8.4.47)(typescript@5.6.2)(yaml@2.5.1):
     dependencies:
       bundle-require: 5.0.0(esbuild@0.23.1)
       cac: 6.7.14
@@ -4620,7 +4620,7 @@ snapshots:
       execa: 5.1.1
       joycon: 3.1.1
       picocolors: 1.1.0
-      postcss-load-config: 6.0.1(jiti@1.21.6)(postcss@8.4.47)(yaml@2.5.1)
+      postcss-load-config: 6.0.1(jiti@2.3.3)(postcss@8.4.47)(yaml@2.5.1)
       resolve-from: 5.0.0
       rollup: 4.24.0
       source-map: 0.8.0-beta.0
