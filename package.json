@@ -34,7 +34,7 @@
   },
   "homepage": "https://github.com/birchill/normal-jp#readme",
   "devDependencies": {
-    "@release-it/conventional-changelog": "9.0.4",
+    "@release-it/conventional-changelog": "10.0.0",
     "@types/node": "20",
     "husky": "9.1.7",
     "knip": "5.41.1",
