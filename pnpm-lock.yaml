@@ -10,7 +10,7 @@ importers:
     devDependencies:
       '@release-it/conventional-changelog':
         specifier: 10.0.0
-        version: 10.0.0(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.0.0)(release-it@18.0.0(@types/node@20.17.12)(typescript@5.7.3))
+        version: 10.0.0(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.0.0)(release-it@18.1.1(@types/node@20.17.12)(typescript@5.7.3))
       '@types/node':
         specifier: '20'
         version: 20.17.12
@@ -30,8 +30,8 @@ importers:
         specifier: 3.4.2
         version: 3.4.2
       release-it:
-        specifier: 18.0.0
-        version: 18.0.0(@types/node@20.17.12)(typescript@5.7.3)
+        specifier: 18.1.1
+        version: 18.1.1(@types/node@20.17.12)(typescript@5.7.3)
       tsup:
         specifier: 8.3.5
         version: 8.3.5(jiti@2.4.0)(postcss@8.4.47)(typescript@5.7.3)(yaml@2.6.1)
@@ -538,9 +538,6 @@ packages:
   '@octokit/rest@21.0.2':
     resolution: {integrity: sha512-+CiLisCoyWmYicH25y1cDfCrv41kRSvTq6pPWtRroRJzhsCZWZyCqGyI8foJT5LmScADSwRAnr/xo+eewL04wQ==}
     engines: {node: '>= 18'}
-
-  '@octokit/types@13.6.0':
-    resolution: {integrity: sha512-CrooV/vKCXqwLa+osmHLIMUb87brpgUqlqkPGc6iE2wCkUvTrHiXFMhAKoDDaAAYJrtKtrFTgSQTg5nObBEaew==}
 
   '@octokit/types@13.6.2':
     resolution: {integrity: sha512-WpbZfZUcZU77DrSW4wbsSgTPfKcp286q3ItaIgvSbBpZJlu6mnYXAkjZz6LVZPXkEvLIM8McanyZejKTYUHipA==}
@@ -1852,8 +1849,8 @@ packages:
     resolution: {integrity: sha512-+crtS5QjFRqFCoQmvGduwYWEBng99ZvmFvF+cUJkGYF1L1BfU8C6Zp9T7f5vPAwyLkUExpvK+ANVZmGU49qi4Q==}
     engines: {node: '>=12'}
 
-  release-it@18.0.0:
-    resolution: {integrity: sha512-aO7sGBwv+0m8FXVNT+RyL1yky9Nhg0IxkqJIdofTma0Dz4w9z0+u5DddzesOoYQL2fawib3Kwn30DaLxqiz5ng==}
+  release-it@18.1.1:
+    resolution: {integrity: sha512-rC/iVKri7U/Kp/Myujmsf7HG2gPq8My/LBVB72TbZZYKD14fmgDZC4Eyn8DD7Yh2h/G/YCCsRe1QQPrjXj9Mzg==}
     engines: {node: ^20.9.0 || >=22.0.0}
     hasBin: true
 
@@ -2714,7 +2711,7 @@ snapshots:
   '@octokit/plugin-paginate-rest@11.3.1(@octokit/core@6.1.3)':
     dependencies:
       '@octokit/core': 6.1.3
-      '@octokit/types': 13.6.0
+      '@octokit/types': 13.6.2
 
   '@octokit/plugin-request-log@5.3.1(@octokit/core@6.1.3)':
     dependencies:
@@ -2723,7 +2720,7 @@ snapshots:
   '@octokit/plugin-rest-endpoint-methods@13.2.2(@octokit/core@6.1.3)':
     dependencies:
       '@octokit/core': 6.1.3
-      '@octokit/types': 13.6.0
+      '@octokit/types': 13.6.2
 
   '@octokit/request-error@6.1.6':
     dependencies:
@@ -2744,10 +2741,6 @@ snapshots:
       '@octokit/plugin-request-log': 5.3.1(@octokit/core@6.1.3)
       '@octokit/plugin-rest-endpoint-methods': 13.2.2(@octokit/core@6.1.3)
 
-  '@octokit/types@13.6.0':
-    dependencies:
-      '@octokit/openapi-types': 22.2.0
-
   '@octokit/types@13.6.2':
     dependencies:
       '@octokit/openapi-types': 22.2.0
@@ -2767,13 +2760,13 @@ snapshots:
       '@pnpm/network.ca-file': 1.0.2
       config-chain: 1.1.13
 
-  '@release-it/conventional-changelog@10.0.0(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.0.0)(release-it@18.0.0(@types/node@20.17.12)(typescript@5.7.3))':
+  '@release-it/conventional-changelog@10.0.0(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.0.0)(release-it@18.1.1(@types/node@20.17.12)(typescript@5.7.3))':
     dependencies:
       concat-stream: 2.0.0
       conventional-changelog: 6.0.0(conventional-commits-filter@5.0.0)
       conventional-recommended-bump: 10.0.0
       git-semver-tags: 8.0.0(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.0.0)
-      release-it: 18.0.0(@types/node@20.17.12)(typescript@5.7.3)
+      release-it: 18.1.1(@types/node@20.17.12)(typescript@5.7.3)
       semver: 7.6.3
     transitivePeerDependencies:
       - conventional-commits-filter
@@ -4055,7 +4048,7 @@ snapshots:
     dependencies:
       rc: 1.2.8
 
-  release-it@18.0.0(@types/node@20.17.12)(typescript@5.7.3):
+  release-it@18.1.1(@types/node@20.17.12)(typescript@5.7.3):
     dependencies:
       '@iarna/toml': 2.2.5
       '@octokit/rest': 21.0.2
