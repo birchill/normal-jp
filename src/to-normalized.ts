@@ -716,7 +716,7 @@ let RADICAL_TO_KANJI: Map<number, number> | undefined;
 // while maintaining a mapping from output character offsets to input
 // offsets.
 export function toNormalized(input: string): [string, number[]] {
-  // Lazily create the radical map to that RADICAL_TO_KANJI_CHARS can be
+  // Lazily create the radical map so that RADICAL_TO_KANJI_CHARS can be
   // tree-shaken when this function is not being used (unlike arrays, Maps()
   // always seem to be included because presumably the ctor could have
   // side-effects).
@@ -734,6 +734,34 @@ export function toNormalized(input: string): [string, number[]] {
     if ((c >= 0xfe00 && c <= 0xfe0f) || (c >= 0xe0100 && c <= 0xe011f)) {
       inputLengths[result.length] = i + 1;
       continue;
+    }
+
+    // Handle surrogate pairs
+    //
+    // Unmatched low surrogate
+    if (c >= 0xdc00 && c <= 0xdfff) {
+      if (i + 1 < input.length) {
+        inputLengths[result.length] = i + 1;
+      }
+      continue;
+    }
+
+    // High surrogate
+    if (c >= 0xd800 && c <= 0xdbff) {
+      // Incomplete surrogate pair at the end of the string
+      if (i === input.length - 1) {
+        continue;
+      }
+
+      // Look for low surrogate
+      const c2 = input.charCodeAt(i + 1);
+      if (c2 < 0xdc00 || c2 > 0xdfff) {
+        inputLengths[result.length] = i + 1;
+        continue;
+      }
+
+      c = (c - 0xd800) * 0x400 + c2 - 0xdc00 + 0x10000;
+      ++i;
     }
 
     // Half-width to full-width katakana
@@ -781,12 +809,13 @@ export function toNormalized(input: string): [string, number[]] {
       expanded = String.fromCodePoint(radical);
     }
 
-    if (expanded) {
-      result += expanded;
-      inputLengths.push(...Array(expanded.length - 1).fill(i));
-    } else {
-      result += String.fromCharCode(c);
-    }
+    // Add to the result
+    const asStr = expanded || String.fromCodePoint(c);
+    result += asStr;
+
+    // Update the input lengths
+    const start = c < 0x10000 ? i : i - 1;
+    inputLengths.push(...Array(asStr.length - 1).fill(start));
     inputLengths[result.length] = i + 1;
   }
 

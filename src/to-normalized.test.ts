@@ -89,4 +89,21 @@ describe('toNormalized', () => {
       [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16],
     ]);
   });
+
+  it('handles non-BMP characters', () => {
+    // Sanity check
+    expect(toNormalized('\uD840\uDFF9沢')).toEqual(['𠏹沢', [0, 0, 2, 3]]);
+
+    // Ending with high-surrogate
+    expect(toNormalized('𠏹沢\uD840')).toEqual(['𠏹沢', [0, 0, 2, 3]]);
+
+    // Unpaired high-surrogate
+    expect(toNormalized('𠏹\uD840沢')).toEqual(['𠏹沢', [0, 0, 3, 4]]);
+
+    // Ending with low-surrogate
+    expect(toNormalized('𠏹沢\uDFF9')).toEqual(['𠏹沢', [0, 0, 2, 3]]);
+
+    // Unpaired low-surrogate
+    expect(toNormalized('𠏹\uDFF9沢')).toEqual(['𠏹沢', [0, 0, 3, 4]]);
+  });
 });
