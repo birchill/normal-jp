@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.6.0 (2025-01-18)
+
+### Features
+
+* handle the Enclosed Ideographic Supplement ([6bccb65](https://github.com/birchill/normal-jp/commit/6bccb659ce4818fa392b97a6e81a16148f2580ff))
+
 ## 1.5.2 (2024-10-04)
 
 
