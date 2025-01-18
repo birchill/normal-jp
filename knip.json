@@ -1,5 +1,4 @@
 {
   "entry": ["src/index.ts"],
-  "ignore": ["tsup.config.ts"],
-  "ignoreDependencies": ["lint-staged"]
+  "ignore": ["tsup.config.ts"]
 }
