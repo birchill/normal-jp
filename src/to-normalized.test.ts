@@ -106,4 +106,11 @@ describe('toNormalized', () => {
     // Unpaired low-surrogate
     expect(toNormalized('𠏹\uDFF9沢')).toEqual(['𠏹沢', [0, 0, 3, 4]]);
   });
+
+  it('converts enclosed ideographic supplement characters', () => {
+    expect(toNormalized('🈂🈔🈩🈀🈁は🈲🈯🉥')).toEqual([
+      'サ二一ほかココは禁指財',
+      [0, 2, 4, 6, 6, 8, 8, 10, 11, 13, 15, 17],
+    ]);
+  });
 });
