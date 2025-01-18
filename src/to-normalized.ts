@@ -91,11 +91,32 @@ const ENCLOSED_CHARS_D = [
   'リ', 'ル', 'レ', 'ロ', 'ワ', 'ヰ', 'ヱ', 'ヲ', '令和'
 ];
 
-// We should handle the Enclosed Ideographic Supplement too
-// (https://en.wikipedia.org/wiki/Enclosed_Ideographic_Supplement)
-// but it's in the SMP so it makes processing more complicated.
-//
-// We'll wait until it's actually needed.
+// Enclosed Ideographic Supplement: 0x1f200-0x1f26f (actually up to 0x1f2ff but
+// there are no characters in the range 0x1f266-0x1f2ff currently)
+// prettier-ignore
+const ENCLOSED_IDEOGRAPHIC_SUPPLEMENT = [
+  'ほか', 'ココ', 'サ', undefined,
+    undefined, undefined, undefined, undefined,
+    undefined, undefined, undefined, undefined,
+    undefined, undefined, undefined, undefined,
+  '手', '字', '双', 'デ', '二', '多', '解', '天',
+    '交', '映', '無', '料', '前', '後', '再', '新', 
+  '初', '終', '生', '販', '声', '吹', '演', '投',
+    '捕', '一', '三', '遊', '左', '中', '右', '指',
+  '走', '打', '禁', '空', '合', '満', '有', '月',
+    '申', '割', '営', '配',
+    undefined, undefined, undefined, undefined,
+  '本', '三', '二', '安', '点', '打', '盗', '勝',
+    '敗', undefined, undefined, undefined,
+    undefined, undefined, undefined, undefined,
+  '得', '可', undefined, undefined,
+    undefined, undefined, undefined, undefined,
+    undefined, undefined, undefined, undefined,
+    undefined, undefined, undefined, undefined,
+  '福', '祿', '壽', '喜', '囍', '財', undefined, undefined,
+    undefined, undefined, undefined, undefined,
+    undefined, undefined, undefined, undefined,
+];
 
 // The following is a mapping from radical characters in the Kangxi Radicals
 // and _some_ of the radicals in the CJK Radicals Supplement block.
@@ -801,6 +822,8 @@ export function toNormalized(input: string): [string, number[]] {
       expanded = ENCLOSED_CHARS_C[c - 0x32c0];
     } else if (c >= 0x32d0 && c <= 0x32ff) {
       expanded = ENCLOSED_CHARS_D[c - 0x32d0];
+    } else if (c >= 0x1f200 && c <= 0x1f26f) {
+      expanded = ENCLOSED_IDEOGRAPHIC_SUPPLEMENT[c - 0x1f200];
     }
 
     // Look for radical characters to map to kanji
