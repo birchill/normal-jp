@@ -40,7 +40,7 @@
     "knip": "5.61.2",
     "lint-staged": "16.1.2",
     "pinst": "3.0.0",
-    "prettier": "3.6.1",
+    "prettier": "3.6.2",
     "release-it": "19.0.3",
     "tsup": "8.5.0",
     "typescript": "5.8.3",
