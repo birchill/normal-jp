@@ -38,7 +38,7 @@
     "@types/node": "22",
     "husky": "9.1.7",
     "knip": "5.63.0",
-    "lint-staged": "16.1.5",
+    "lint-staged": "16.1.6",
     "pinst": "3.0.0",
     "prettier": "3.6.2",
     "release-it": "19.0.4",
