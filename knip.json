@@ -1,4 +1,0 @@
-{
-  "entry": ["src/index.ts"],
-  "ignore": ["tsup.config.ts"]
-}
