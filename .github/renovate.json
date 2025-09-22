@@ -10,8 +10,15 @@
       "matchUpdateTypes": ["minor", "patch"],
       "automerge": true,
       "automergeType": "branch",
-      "minimumReleaseAge": "5 days",
-      "internalChecksFilter": "strict"
+      "minimumReleaseAge": "5 days"
+    },
+    {
+      "matchPackageNames": ["tsdown"],
+      "matchCurrentVersion": "/^0\\./",
+      "matchUpdateTypes": ["major", "minor", "patch"],
+      "automerge": true,
+      "automergeType": "branch",
+      "minimumReleaseAge": "5 days"
     },
     {
       "matchDepTypes": ["devDependencies"],
