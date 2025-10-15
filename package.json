@@ -6,9 +6,8 @@
   "scripts": {
     "build": "tsdown",
     "test": "vitest run",
-    "prepublishOnly": "pinst --disable && tsdown",
-    "postinstall": "husky",
-    "postpublish": "pinst --enable"
+    "prepublishOnly": "tsdown",
+    "prepare": "husky"
   },
   "repository": {
     "type": "git",
@@ -21,7 +20,7 @@
     "url": "https://github.com/birchill/normal-jp/issues"
   },
   "files": [
-    "dist/**"
+    "dist"
   ],
   "type": "module",
   "main": "./dist/index.cjs",
@@ -34,14 +33,11 @@
   },
   "homepage": "https://github.com/birchill/normal-jp#readme",
   "devDependencies": {
-    "@release-it/conventional-changelog": "10.0.1",
     "@types/node": "22",
     "husky": "9.1.7",
     "knip": "5.64.2",
     "lint-staged": "16.2.3",
-    "pinst": "3.0.0",
     "prettier": "3.6.2",
-    "release-it": "19.0.5",
     "tsdown": "0.15.6",
     "typescript": "5.9.3",
     "vitest": "3.2.4",
