@@ -70,9 +70,3 @@ Like [`String.prototype.substring`](https://developer.mozilla.org/docs/Web/JavaS
 Converts half-width numbers to full-width.
 
 - `halfToFullWidthNum('第405号')` ⇒ '第４０５号'
-
-## Publishing
-
-```
-pnpm release-it
-```
