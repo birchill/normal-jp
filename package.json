@@ -36,7 +36,7 @@
     "@types/node": "22",
     "husky": "9.1.7",
     "knip": "5.64.3",
-    "lint-staged": "16.2.3",
+    "lint-staged": "16.2.4",
     "prettier": "3.6.2",
     "tsdown": "0.15.6",
     "typescript": "5.9.3",
