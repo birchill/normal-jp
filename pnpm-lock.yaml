@@ -24,8 +24,8 @@ importers:
         specifier: 3.6.2
         version: 3.6.2
       tsdown:
-        specifier: 0.16.2
-        version: 0.16.2(ms@2.1.3)(oxc-resolver@11.13.0)(synckit@0.11.11)(typescript@5.9.3)
+        specifier: 0.16.3
+        version: 0.16.3(ms@2.1.3)(oxc-resolver@11.13.0)(synckit@0.11.11)(typescript@5.9.3)
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -841,6 +841,14 @@ packages:
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
 
+  obug@0.1.3:
+    resolution: {integrity: sha512-9fwkQ1jsVEqi3I3so5QA4yLPW2QVtekrIpiVUWyw8c/BApPHYj0gohWby3qzK30X58lyksSqcbfvO0vOwKFWqQ==}
+    peerDependencies:
+      ms: ^2.0.0
+    peerDependenciesMeta:
+      ms:
+        optional: true
+
   obug@1.0.0:
     resolution: {integrity: sha512-WKcS43Yl6YPJekid7KiRdT6CHMSmYWVfJiSFbTaGxWQlC+cEBPxHa9jR1uS2cMiQmXd8Hsa2ipAKErQ/GLhSpg==}
     peerDependencies:
@@ -1020,8 +1028,8 @@ packages:
     resolution: {integrity: sha512-L0Orpi8qGpRG//Nd+H90vFB+3iHnue1zSSGmNOOCh1GLJ7rUKVwV2HvijphGQS2UmhUZewS9VgvxYIdgr+fG1A==}
     hasBin: true
 
-  tsdown@0.16.2:
-    resolution: {integrity: sha512-ZyHFO5DduN2TxY47hHPGZRZz5XSQbDYFl8L4BkLJlzYeHuX0cx5mZkonq7Xm4OC/z8BxWY+ai4kwvevup4Lwlw==}
+  tsdown@0.16.3:
+    resolution: {integrity: sha512-uciWbZs71/Yj5Mr++gk+Ry3cp4c4PGluLscJ8dbGLHyKFjo1Hrtn+Ix/BIulIKsrnECwwvDge24WKHzdJmCCQg==}
     engines: {node: '>=20.19.0'}
     hasBin: true
     peerDependencies:
@@ -1783,6 +1791,10 @@ snapshots:
 
   nanoid@3.3.11: {}
 
+  obug@0.1.3(ms@2.1.3):
+    optionalDependencies:
+      ms: 2.1.3
+
   obug@1.0.0(ms@2.1.3):
     optionalDependencies:
       ms: 2.1.3
@@ -1980,15 +1992,15 @@ snapshots:
 
   tree-kill@1.2.2: {}
 
-  tsdown@0.16.2(ms@2.1.3)(oxc-resolver@11.13.0)(synckit@0.11.11)(typescript@5.9.3):
+  tsdown@0.16.3(ms@2.1.3)(oxc-resolver@11.13.0)(synckit@0.11.11)(typescript@5.9.3):
     dependencies:
       ansis: 4.2.0
       cac: 6.7.14
       chokidar: 4.0.3
-      debug: 4.4.3
       diff: 8.0.2
       empathic: 2.0.0
       hookable: 5.5.3
+      obug: 0.1.3(ms@2.1.3)
       rolldown: 1.0.0-beta.49
       rolldown-plugin-dts: 0.17.7(ms@2.1.3)(oxc-resolver@11.13.0)(rolldown@1.0.0-beta.49)(typescript@5.9.3)
       semver: 7.7.3
@@ -2004,7 +2016,6 @@ snapshots:
       - '@typescript/native-preview'
       - ms
       - oxc-resolver
-      - supports-color
       - synckit
       - vue-tsc
 
