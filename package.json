@@ -38,7 +38,7 @@
     "knip": "5.70.2",
     "lint-staged": "16.2.7",
     "prettier": "3.6.2",
-    "tsdown": "0.16.6",
+    "tsdown": "0.16.7",
     "typescript": "5.9.3",
     "vitest": "4.0.13"
   },
