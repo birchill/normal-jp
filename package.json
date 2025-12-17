@@ -35,7 +35,7 @@
   "devDependencies": {
     "@types/node": "24.10.3",
     "husky": "9.1.7",
-    "knip": "5.73.3",
+    "knip": "5.73.4",
     "lint-staged": "16.2.7",
     "prettier": "3.7.4",
     "tsdown": "0.17.2",
