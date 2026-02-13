@@ -33,7 +33,7 @@
   },
   "homepage": "https://github.com/birchill/normal-jp#readme",
   "devDependencies": {
-    "@types/node": "24.10.11",
+    "@types/node": "24.10.12",
     "husky": "9.1.7",
     "knip": "5.83.1",
     "lint-staged": "16.2.7",
