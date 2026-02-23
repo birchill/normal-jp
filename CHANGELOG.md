@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.0.0 (2026-02-23)
+
+
+### Features
+
+* drop malformed UTF-16 ([346158d](https://github.com/birchill/normal-jp/commit/346158d1866cc2fbf8d3831f008b97206138049b))
+* handle the Enclosed Ideographic Supplement ([6bccb65](https://github.com/birchill/normal-jp/commit/6bccb659ce4818fa392b97a6e81a16148f2580ff))
+
+
+### Bug Fixes
+
+* add 內 kyūjitai ([73ab423](https://github.com/birchill/normal-jp/commit/73ab4237009117c46a35fd0d07cd8f4bd5f29ff3))
+* add 戶 kyūjitai ([f59171b](https://github.com/birchill/normal-jp/commit/f59171b8247ff7817ee573bc0d771e468e0fddf7))
+
 ## 1.6.0 (2025-01-18)
 
 ### Features
