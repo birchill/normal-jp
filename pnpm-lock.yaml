@@ -18,8 +18,8 @@ importers:
         specifier: 9.1.7
         version: 9.1.7
       knip:
-        specifier: 6.9.0
-        version: 6.9.0(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)
+        specifier: 6.11.0
+        version: 6.11.0(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)
       lint-staged:
         specifier: 17.0.0
         version: 17.0.0
@@ -1131,8 +1131,8 @@ packages:
   jsonfile@4.0.0:
     resolution: {integrity: sha512-m6F1R3z8jjlf2imQHS2Qez5sjKWQzbuuhuJ/FKYFRZvPE3PuHcSMVZzfsLhGVOkfd20obL5SWEBew5ShlquNxg==}
 
-  knip@6.9.0:
-    resolution: {integrity: sha512-2GLjxteBwmsSA3Z5sJZpPDaNPBIMnlm4/9Nx4CZadEK7YccJZ2/4kwKgPWhVYEqxhwhD0WO4txWXNGTO/Odkkg==}
+  knip@6.11.0:
+    resolution: {integrity: sha512-84PTlN8Q5smLpTbzs8smTVh8PMbTDXtw0tFksXq/m6auGFC/KSzJykKFmnYh3As38kiWDkoDBvdTTyKk5M1TAQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
 
@@ -1610,11 +1610,6 @@ packages:
   wrap-ansi@9.0.0:
     resolution: {integrity: sha512-G8ura3S+3Z2G+mkgNRq8dqaFZAuxfsxpBB8OCTGRTCtp+l/v9nbFNmCUP1BZMts3G1142MsZfn6eeUKrr4PD1Q==}
     engines: {node: '>=18'}
-
-  yaml@2.8.2:
-    resolution: {integrity: sha512-mplynKqc1C2hTVYxd0PU2xQAc22TI1vShAYGksCCfxbn/dFwnHTNi1bvYsBTkhdUNtGIf5xNOg938rrSSYvS9A==}
-    engines: {node: '>= 14.6'}
-    hasBin: true
 
   yaml@2.8.4:
     resolution: {integrity: sha512-ml/JPOj9fOQK8RNnWojA67GbZ0ApXAUlN2UQclwv2eVgTgn7O9gg9o7paZWKMp4g0H3nTLtS9LVzhkpOFIKzog==}
@@ -2519,7 +2514,7 @@ snapshots:
     optionalDependencies:
       graceful-fs: 4.2.11
 
-  knip@6.9.0(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0):
+  knip@6.11.0(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0):
     dependencies:
       fdir: 6.5.0(picomatch@4.0.4)
       formatly: 0.3.0
@@ -2533,7 +2528,7 @@ snapshots:
       strip-json-comments: 5.0.3
       tinyglobby: 0.2.16
       unbash: 3.0.0
-      yaml: 2.8.2
+      yaml: 2.8.4
       zod: 4.1.11
     transitivePeerDependencies:
       - '@emnapi/core'
@@ -2996,9 +2991,6 @@ snapshots:
       string-width: 7.2.0
       strip-ansi: 7.1.2
 
-  yaml@2.8.2: {}
-
-  yaml@2.8.4:
-    optional: true
+  yaml@2.8.4: {}
 
   zod@4.1.11: {}
