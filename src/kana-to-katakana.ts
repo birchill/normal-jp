@@ -1,4 +1,4 @@
-export function hiraganaToKatakana(input: string): string {
+export function kanaToKatakana(input: string): string {
   let result = '';
 
   for (const char of input) {

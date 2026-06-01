@@ -1,5 +1,5 @@
 export { expandChoon } from './expand-choon.js';
-export { hiraganaToKatakana } from './hiragana-to-katakana.js';
+export { kanaToKatakana } from './kana-to-katakana.js';
 export { kanaToHiragana } from './kana-to-hiragana.js';
 export { kyuujitaiToShinjitai } from './kyuujitai.js';
 export { halfToFullWidthNum } from './numbers.js';

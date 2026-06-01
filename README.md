@@ -22,7 +22,7 @@ _and_ return the mapping from positions in the output string to the input string
 (using regular character indexing, not fancy codepoint indexing since the APIs
 we want to use these results with don't know about about surrogate pairs).
 
-## `katakanaToHiragana`
+## `kanaToHiragana`
 
 Converts full-width katakana characters to hiragana. It doesn't handle
 half-width katakana so you should run the input through `toNormalized` first if
@@ -32,10 +32,10 @@ Note that the length of the output is equal to the length of the input so this
 function does not returning the mapping from input string character offsets to
 output string positions.
 
-## `hiraganaToKatakana`
+## `kanaToKatakana`
 
 Converts hiragana characters to full-width katakana. As with
-`katakanaToHiragana` the length of the input and output is equal so this
+`kanaToHiragana` the length of the input and output is equal so this
 function does not return the mapping between character offsets.
 
 ## `kyuujitaiToShinjitai`
