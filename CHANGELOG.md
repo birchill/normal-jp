@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.7.1
+
+### Patch Changes
+
+- e8fa8ca: Rename hiraganaToKatakana to kanaToKatanaka
+
 ## 1.7.0
 
 ### Minor Changes
