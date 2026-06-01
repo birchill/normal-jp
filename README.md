@@ -32,6 +32,12 @@ Note that the length of the output is equal to the length of the input so this
 function does not returning the mapping from input string character offsets to
 output string positions.
 
+## `hiraganaToKatakana`
+
+Converts hiragana characters to full-width katakana. As with
+`katakanaToHiragana` the length of the input and output is equal so this
+function does not return the mapping between character offsets.
+
 ## `kyuujitaiToShinjitai`
 
 Converts various 旧字体 (_kyuujitai_, old character forms) to 新字体 (_shinjitai_,
