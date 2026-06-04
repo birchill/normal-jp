@@ -57,7 +57,7 @@ Expands ー to the various vowels it may represent.
 As with `katakanaToHiragana` the length of the input and output is equal so this
 function does not return the mapping between character offsets.
 
-## `moraCount`
+## `countMora`
 
 Counts the number of mora in a hiragana/katakana string, e.g.
 
