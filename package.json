@@ -37,7 +37,7 @@
     "@changesets/cli": "2.31.0",
     "@types/node": "24.13.2",
     "husky": "9.1.7",
-    "knip": "6.16.1",
+    "knip": "6.17.1",
     "lint-staged": "17.0.7",
     "prettier": "3.8.4",
     "tsdown": "0.22.2",
