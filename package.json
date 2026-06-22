@@ -40,7 +40,7 @@
     "knip": "6.17.1",
     "lint-staged": "17.0.7",
     "prettier": "3.8.4",
-    "tsdown": "0.22.2",
+    "tsdown": "0.22.3",
     "typescript": "6.0.3",
     "vitest": "4.1.9"
   }
