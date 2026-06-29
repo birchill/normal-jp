@@ -13,6 +13,13 @@ describe('expandChoon', () => {
     expect(expandChoon('オーサカ')).toEqual(['オウサカ', 'オオサカ']);
   });
 
+  it('expands the i-row consistently for hiragana and katakana', () => {
+    expect(expandChoon('ひー')).toEqual(['ひい']);
+    expect(expandChoon('ヒーター')).toEqual(['ヒイタア']);
+    expect(expandChoon('びー')).toEqual(['びい']);
+    expect(expandChoon('ビール')).toEqual(['ビイル']);
+  });
+
   it('expands extended cases', () => {
     expect(expandChoon('わーーーーーい')).toEqual(['わあああああい']);
   });

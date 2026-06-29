@@ -26,7 +26,7 @@ export function expandChoon(input: string): Array<string> {
     .replace(/([あかがさざただなはばぱまやゃらわ])ー+/g, replacer('あ'))
     .replace(/([アカガサザタダナハバパマヤャラワ])ー+/g, replacer('ア'))
     .replace(/([いきぎしじちぢにひびぴみり])ー+/g, replacer('い'))
-    .replace(/([イキギシジチヂニイブピミリ])ー+/g, replacer('イ'))
+    .replace(/([イキギシジチヂニヒビピミリ])ー+/g, replacer('イ'))
     .replace(/([えけげせぜてでねへべぺめれ])ー+/g, replacer('え'))
     .replace(/([エケゲセゼテデネヘベペメレ])ー+/g, replacer('エ'));
 
