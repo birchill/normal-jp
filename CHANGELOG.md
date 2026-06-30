@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.7.2
+
+### Patch Changes
+
+- 817ac38: Fix expandChoon expansion for katakana ヒ and ビ
+
 ## 1.7.1
 
 ### Patch Changes
