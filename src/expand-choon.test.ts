@@ -38,4 +38,32 @@ describe('expandChoon', () => {
       'トオキョオ',
     ]);
   });
+
+  describe('maxVariants', () => {
+    it('truncates the result', () => {
+      expect(expandChoon('トーキョー', { maxVariants: 2 })).toEqual([
+        'トウキョウ',
+        'トウキョオ',
+      ]);
+    });
+
+    it('has no effect when it exceeds the number of expansions', () => {
+      expect(expandChoon('トーキョー', { maxVariants: 100 })).toEqual(
+        expandChoon('トーキョー')
+      );
+    });
+
+    it('returns nothing for a limit of zero', () => {
+      expect(expandChoon('トーキョー', { maxVariants: 0 })).toEqual([]);
+    });
+
+    it('bounds the work, not just the result', () => {
+      // Unbounded this is 2^20 expansions and several seconds of work.
+      const start = performance.now();
+      expect(expandChoon('コー'.repeat(20), { maxVariants: 16 })).toHaveLength(
+        16
+      );
+      expect(performance.now() - start).toBeLessThan(50);
+    });
+  });
 });

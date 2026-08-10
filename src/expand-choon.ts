@@ -10,9 +10,23 @@
  *
  * This function returns an empty array if the input string contains no
  * ー characters.
+ *
+ * Only the お-row is ambiguous (ー can be either う or お). Every other row
+ * expands to a single vowel, so the number of results is 2^n where n is the
+ * number of お-row long vowels in the input. That gets expensive quickly: a
+ * 40 character run of them produces over a million strings.
+ *
+ * Callers working with arbitrary input should therefore pass `maxVariants` to
+ * bound both the size of the result and the work done producing it. Expansion
+ * stops as soon as that many results have been generated, so the result is
+ * truncated rather than complete. The order in which results are generated is
+ * deterministic but otherwise unspecified.
  */
-export function expandChoon(input: string): Array<string> {
-  if (input.indexOf('ー') === -1) {
+export function expandChoon(
+  input: string,
+  { maxVariants = Infinity }: { maxVariants?: number } = {}
+): Array<string> {
+  if (input.indexOf('ー') === -1 || maxVariants < 1) {
     return [];
   }
 
@@ -35,6 +49,12 @@ export function expandChoon(input: string): Array<string> {
   const matchO = /([おこごそぞとどのほぼぽもよょろを])ー+/;
   const matchKatakanaO = /([オコゴソゾトドノホボポモヨョロヲ])ー+/;
   const expandO = (base: string) => {
+    // Stop as soon as we have enough. Because this unwinds the whole recursion
+    // it also caps the work done, not just the size of the result.
+    if (result.length >= maxVariants) {
+      return;
+    }
+
     let expandedWithU = base.replace(matchO, replacer('う'));
     if (expandedWithU === base) {
       expandedWithU = base.replace(matchKatakanaO, replacer('ウ'));
