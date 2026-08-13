@@ -50,10 +50,10 @@ jobs:
 
       - name: Create/update pull request or publish
         if: github.repository == 'birchill/normal-jp' && github.ref == 'refs/heads/main' && github.event_name == 'push'
-        uses: changesets/action@v1
+        uses: changesets/action@v2
         with:
-          commit: 'chore(release): publish'
-          title: 'Publish next version'
-          publish: pnpm ci:publish
+          commit-message: 'chore(release): publish'
+          pr-title: 'Publish next version'
+          publish-script: pnpm ci:publish
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
