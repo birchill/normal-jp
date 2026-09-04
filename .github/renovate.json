@@ -13,6 +13,10 @@
       "minimumReleaseAge": "5 days"
     },
     {
+      "matchUpdateTypes": ["major"],
+      "minimumReleaseAge": "5 days"
+    },
+    {
       "matchPackageNames": ["tsdown"],
       "matchCurrentVersion": "/^0\\./",
       "matchUpdateTypes": ["major", "minor", "patch"],
