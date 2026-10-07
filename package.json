@@ -35,7 +35,7 @@
   "homepage": "https://github.com/birchill/normal-jp#readme",
   "devDependencies": {
     "@changesets/cli": "3.0.3",
-    "@types/node": "24.19.0",
+    "@types/node": "24.19.1",
     "husky": "9.1.7",
     "knip": "6.39.0",
     "nano-staged": "1.0.2",
