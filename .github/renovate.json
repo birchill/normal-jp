@@ -1,7 +1,6 @@
 {
   "extends": [
     "config:recommended",
-    "helpers:disableTypesNodeMajor",
     ":dependencyDashboard"
   ],
   "labels": ["dependencies"],
@@ -27,6 +26,10 @@
     {
       "matchDepTypes": ["devDependencies"],
       "addLabels": ["dev"]
+    },
+    {
+      "matchPackageNames": ["node", "actions/node-versions", "@types/node"],
+      "allowedVersions": "24.x"
     }
   ]
 }
