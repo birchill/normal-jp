@@ -42,6 +42,6 @@
     "prettier": "3.10.1",
     "tsdown": "0.23.7",
     "typescript": "7.0.2",
-    "vitest": "5.1.0"
+    "vitest": "5.1.1"
   }
 }
